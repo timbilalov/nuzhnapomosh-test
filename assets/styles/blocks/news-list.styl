@@ -1,0 +1,56 @@
+.news-list
+    pside = rel-size(24px)
+    p = rel-size(20px) pside
+    bd = rel-size(1px) solid alpha(white, 0.25)
+
+    &__controls
+        padding 1rem pside
+
+    &__items
+        border-top bd
+        border-bottom @border-top
+
+    &__item
+        display block
+        border-bottom bd
+        padding 1rem pside
+        display flex
+        justify-content space-between
+        fz(16)
+        transition background-color trs-time-default
+
+        &:last-child
+            border-bottom none
+
+        &:hover
+            background-color alpha(white, 0.03)
+
+    &__img-col
+        width 40%
+        margin-right rel-size(20px)
+
+    &__img-holder
+        aspect-ratio(130, 80)
+
+    &__img
+        full-sized()
+        object-fit cover
+        object-position center center
+
+    &__text-col
+        flex 1
+
+    &__title
+        margin 0 0 0.5em
+        font-size 1em
+
+    &__date
+        margin 0
+        opacity .5
+
+    &__btn
+        border-bottom rel-size(1px) dashed transparent
+        transition border-bottom trs-time-default
+
+        &:hover
+            border-bottom-color alpha(white, 0.5)

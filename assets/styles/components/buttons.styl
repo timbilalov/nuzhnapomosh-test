@@ -8,21 +8,21 @@ btn-paddings(pt = 0.3em, pdiff = 10%, pleft = 1.2em, pright = pleft)
 btn-fsize = 16
 $btn
     display inline-block
-    color black
-    btn-paddings(0.55em, , 1.3em)
+    btn-paddings(0.7em, 5%, 1.4em)
     outline 0
-    background-color transparent
-    border-radius 2em
-    border (4/btn-fsize)em solid currentColor
     line-height 1
     font-weight bold
     fz(btn-fsize, , rem)
     transition all trs-time-default
     box-sizing border-box
     position relative
+    text-transform uppercase
+    background-color gray-bg
+    border 0
+    color font-color
 
     &:hover
-        color lighten(black, 40)
+        background-color lighten(gray-bg, -5)
         border-image none
 
     &:active
@@ -44,6 +44,11 @@ $btn
 
         &:last-child
             margin-left 0.3em
+
+    &--block
+        display block
+        width 100%
+        btn-paddings(1.2em, 5%, 2em)
 
 button
     @extend $btn
