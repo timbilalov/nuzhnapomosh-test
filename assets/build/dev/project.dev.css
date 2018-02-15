@@ -210,9 +210,12 @@ th {
             transform: rotate(359deg);
   }
 }
-.page-footer__logo,
+.main-menu__icon--1,
+.main-menu__icon--2,
+.main-menu__icon--3,
+.main-menu__icon--4,
 .page-header__logo-img {
-  background-image: url("/assets/build/dev/sprites/common-sprite.png?mt=1518712750062");
+  background-image: url("/assets/build/dev/sprites/common-sprite.png?mt=1518717549004");
 }
 body,
 html {
@@ -235,6 +238,7 @@ body.is-popup-opened {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #f1f1f1;
 }
 .l-wrapper.is-abs {
   position: absolute;
@@ -442,7 +446,8 @@ h6,
   font-size: 0.7em;
   margin: 1.5em 0 0.8em;
 }
-a:not([class]) {
+a:not([class]),
+.main-menu__item-text {
   text-decoration: none;
   -webkit-transition: border 0.2s;
   transition: border 0.2s;
@@ -454,21 +459,23 @@ a:not([class]) {
      border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0)), color-stop(500%, currentColor)) 1 round round;
      border-image: linear-gradient(to bottom, rgba(255,255,255,0) 0, currentColor 500%) 1 round round;
 }
-a:not([class]):hover {
+a:not([class]):hover,
+.main-menu__item-text:hover {
   -o-border-image: linear-gradient(to bottom, currentColor 0, currentColor 500%) 1 round round;
      border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, currentColor), color-stop(500%, currentColor)) 1 round round;
      border-image: linear-gradient(to bottom, currentColor 0, currentColor 500%) 1 round round;
 }
 @supports not (border-image-width: 1) {
-  a:not([class]) {
+  a:not([class]),
+  .main-menu__item-text {
     border-bottom: 0.05em solid currentColor;
   }
-  a:not([class]):hover {
+  a:not([class]):hover,
+  .main-menu__item-text:hover {
     border-bottom: 0.05em solid currentColor;
   }
 }
 a[href^="tel:"],
-.page-footer__logo:link,
 #mocha a {
   text-decoration: none;
   -o-border-image: none;
@@ -1178,6 +1185,66 @@ table > tbody:first-child tr:first-child td {
   outline: 0;
   border: 0;
 }
+.main-menu__icon {
+  margin-right: 0.3em;
+}
+.main-menu__icon--1 {
+  background-position: 0px -128px;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu__icon--2 {
+  background-position: -101px -100px;
+  width: 25px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu__icon--3 {
+  background-position: -130px -75px;
+  width: 25px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu__icon--4 {
+  background-position: -101px -75px;
+  width: 24px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.main-menu__item-text {
+  text-decoration: none;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+  border-width: 0;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-width: 1px;
+  -o-border-image: linear-gradient(to bottom, rgba(255,255,255,0) 0, currentColor 500%) 1 round round;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255,255,255,0)), color-stop(500%, currentColor)) 1 round round;
+     border-image: linear-gradient(to bottom, rgba(255,255,255,0) 0, currentColor 500%) 1 round round;
+}
+.main-menu__item-text:hover {
+  -o-border-image: linear-gradient(to bottom, currentColor 0, currentColor 500%) 1 round round;
+     border-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, currentColor), color-stop(500%, currentColor)) 1 round round;
+     border-image: linear-gradient(to bottom, currentColor 0, currentColor 500%) 1 round round;
+}
+@supports not (border-image-width: 1) {
+  .main-menu__item-text {
+    border-bottom: 0.05em solid currentColor;
+  }
+  .main-menu__item-text:hover {
+    border-bottom: 0.05em solid currentColor;
+  }
+}
+.main-menu__item:hover,
+.main-menu__item.is-active {
+  color: #f75b06;
+}
 @media only screen and (min-width: 761px) {
   .main-menu__item {
     margin-right: 1em;
@@ -1250,17 +1317,6 @@ table > tbody:first-child tr:first-child td {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.page-footer__logo {
-  background-position: 0px 0px;
-  width: 168px;
-  height: 70px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 0.5em;
-}
-.page-footer__logo:link {
-  text-decoration: none;
 }
 @media only screen and (max-width: 660px) {
   .page-footer__content {
@@ -1395,7 +1451,7 @@ table > tbody:first-child tr:first-child td {
 .page-sidebar {
   background-color: #302f2d;
   color: #fff;
-  padding: 2rem 4%;
+  padding: 1rem 1.2rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1403,6 +1459,7 @@ table > tbody:first-child tr:first-child td {
   padding: 2rem 4%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #fff;
 }
 .pg-list {
   position: fixed;

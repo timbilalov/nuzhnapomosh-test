@@ -3,23 +3,15 @@
             <? } ?>
         </div><? // end of .l-content ?>
 
-        <footer class="l-footer page-footer <? if ($rawContainer) echo 'page-footer--no-margin'; ?>">
+        <footer class="l-footer page-footer <? if ($rawContainer || $noMargins) echo 'page-footer--no-margin'; ?>">
             <div class="l-container page-footer__content">
                 <div class="page-footer__block page-footer__copyright">
-                    <a href="#" class="page-footer__logo"></a>
-                    <span class="g-vam">
-                        &copy;&nbsp;2014-<?=Date("Y")?><br/>
-                        Company
-                    </span>
+                    &copy;&nbsp;2017
+                    Проект Благотворительного фонда "Нужна помощь"
                 </div>
 
                 <div class="page-footer__block page-footer__creators">
-                    Пишите<sup>*</sup>: <?obfuscator("mailto:", "t-moore@mail.ru")?>
-                    <br/>
-                    Звоните: <?obfuscator("tel:", "+7 926 133-30-10")?>
-
-                    <br/><br/>
-                    <small>* — предпочтительный вид связи</small>
+                    Все права защищены
                 </div>
             </div>
         </footer>

@@ -1,6 +1,6 @@
 <?
 $page = "main";
-$rawContainer = true;
+$noMargins = true;
 require_once ('header.php');
 ?>
 

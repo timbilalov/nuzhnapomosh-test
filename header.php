@@ -159,10 +159,22 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/assets/SpamProtection.php";
 
                     <div class="page-header__block page-header__nav js-mobmenu-expand">
                         <nav class="main-menu">
-                            <a href="#" class="main-menu__item">Каталог</a>
-                            <a href="#" class="main-menu__item">Новости</a>
-                            <a href="#" class="main-menu__item">О нас</a>
-                            <a href="#" class="main-menu__item">Контакты</a>
+                            <a href="#" class="main-menu__item">
+                                <span class="main-menu__icon main-menu__icon--1"></span>
+                                <span class="main-menu__item-text">Каталог</span>
+                            </a>
+                            <a href="#" class="main-menu__item">
+                                <span class="main-menu__icon main-menu__icon--2"></span>
+                                <span class="main-menu__item-text">Новости</span>
+                            </a>
+                            <a href="#" class="main-menu__item">
+                                <span class="main-menu__icon main-menu__icon--3"></span>
+                                <span class="main-menu__item-text">О нас</span>
+                            </a>
+                            <a href="#" class="main-menu__item">
+                                <span class="main-menu__icon main-menu__icon--4"></span>
+                                <span class="main-menu__item-text">Контакты</span>
+                            </a>
                         </nav>
                     </div>
                 </div>
