@@ -43,6 +43,9 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/assets/SpamProtection.php";
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
 
+    <!-- Web fonts -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
     <? // Main styles ?>
     <? if ($debug) { ?>
     <link rel="stylesheet" href="<?=$buildDest?>project.dev.css?<?php echo filemtime($_SERVER['DOCUMENT_ROOT'].$buildDest.'project.dev.css'); ?>" media="all" />
@@ -143,11 +146,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/assets/SpamProtection.php";
                 <div class="page-header__content">
                     <div class="page-header__top-row">
                         <a <? if ($page != "main") echo 'href="/"'; ?> class="page-header__block page-header__logo">
-                            <svg class="svg-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-temp-html5"></use>
-                            </svg>
-
-                            <span class="g-vam">Logo here</span>
+                            <span class="page-header__logo-img"></span>
                         </a>
 
 
@@ -160,10 +159,10 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/assets/SpamProtection.php";
 
                     <div class="page-header__block page-header__nav js-mobmenu-expand">
                         <nav class="main-menu">
-                            <a href="#" class="main-menu__item">menu item 1</a>
-                            <a href="#" class="main-menu__item">menu item 2</a>
-                            <a href="#" class="main-menu__item">menu item 3</a>
-                            <a href="#" class="main-menu__item">menu item 4</a>
+                            <a href="#" class="main-menu__item">Каталог</a>
+                            <a href="#" class="main-menu__item">Новости</a>
+                            <a href="#" class="main-menu__item">О нас</a>
+                            <a href="#" class="main-menu__item">Контакты</a>
                         </nav>
                     </div>
                 </div>

@@ -3,7 +3,7 @@
             <? } ?>
         </div><? // end of .l-content ?>
 
-        <footer class="l-footer page-footer">
+        <footer class="l-footer page-footer <? if ($rawContainer) echo 'page-footer--no-margin'; ?>">
             <div class="l-container page-footer__content">
                 <div class="page-footer__block page-footer__copyright">
                     <a href="#" class="page-footer__logo"></a>
