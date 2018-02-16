@@ -163,7 +163,7 @@ require_once $_SERVER["DOCUMENT_ROOT"] . "/assets/SpamProtection.php";
                                 <span class="main-menu__icon main-menu__icon--1"></span>
                                 <span class="main-menu__item-text">Каталог</span>
                             </a>
-                            <a href="#" class="main-menu__item">
+                            <a class="main-menu__item is-active">
                                 <span class="main-menu__icon main-menu__icon--2"></span>
                                 <span class="main-menu__item-text">Новости</span>
                             </a>

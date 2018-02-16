@@ -7,7 +7,8 @@ $input
     outline 0
     background-color white
     color black
-    border rel-size(1px) solid black
+    border rel-size(1px) solid gray-borders
+    border-radius 0.2rem
     fz(15)
 
     &:focus
@@ -34,7 +35,7 @@ form:not([class])
 .form
     @extend $form
 
-    input:not(.g-raw):not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"])
+    input:not(.g-raw):not(.btn):not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="image"]):not([type="button"]):not([type="reset"]):not([type="color"]):not([type="file"])
     select:not(.g-raw)
     textarea:not(.g-raw)
         @extend $input
@@ -47,7 +48,7 @@ form:not([class])
     input[type="submit"]
     input[type="button"]
     input[type="reset"]
-        &:not(.g-raw)
+        &:not(.g-raw):not(.btn)
             @extend $btn
 
     input[type="image"]
@@ -95,28 +96,21 @@ form-error-bdwidth = rel-size(2px)
 
     &__error-msg
         display none
-        position absolute
-        right - form-error-bdwidth
-        bottom 100%
-        background-color form-error-color
-        color white
+        font-style italic
+        color form-error-color
         fz(16)
-        padding 0.3em 1em
-        white-space nowrap
-
-        &--left
-            right auto
-            left - form-error-bdwidth
+        margin-top 0.2em
+        opacity 0.5
 
     &__input-wrapper
         position relative
-        border form-error-bdwidth solid transparent
 
         &.is-error
-            border-color form-error-color
-
             .form__error-msg
                 display block
+
+            input, select, textarea
+                border-color form-error-color !important // stylint ignore
 
     &--no-paddings
         padding 0
@@ -200,6 +194,11 @@ form-error-bdwidth = rel-size(2px)
 
         +below(bp-xs)
             font-size 1em
+
+    &__label
+        display inline-block
+        margin-bottom 0.3em
+
 
     +below(xs)
         &__thanks

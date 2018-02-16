@@ -2,3 +2,21 @@
     background-color dark-gray
     color white
     box-sizing border-box
+
+
+    /*
+       Adaptive
+       ========================================================================== */
+
+    +below(bp-tab-xs)
+        outline: 1px solid red;
+        position fixed
+        z-index 3
+        right 100%
+        top 0
+        height 100%
+        transition transform trs-time-default
+        transform translate(site-paddings * 3.33, 0)
+
+        &:hover
+            transform translate(100%, 0)
