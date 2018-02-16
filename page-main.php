@@ -5,60 +5,77 @@ require_once ('header.php');
 ?>
 
 <div class="l-columns">
-    <div class="l-sidebar page-sidebar">
-        <div class="news-list js-news-list">
-            <div class="news-list__controls">
-                <a role="button" class="news-list__btn js-toggle" data-toggle-text="Сначала старые">Сначала новые</a>
-            </div>
+    <div class="l-sidebar page-sidebar js-sidebar">
+        <div class="page-sidebar__bg-layer js-sidebar-toggle"></div>
 
-            <div class="news-list__items js-container">
-                <a href="#" class="news-list__item js-item">
-                    <div class="news-list__img-col">
-                        <div class="news-list__img-holder">
-                            <img class="news-list__img" src="/media/images/news-picture-1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="news-list__text-col">
-                        <h2 class="news-list__title">Из ряда вон выходящий принцип восприятия: основные моменты</h2>
-                        <p class="news-list__date js-date">15.12.2017</p>
-                    </div>
-                </a>
+        <a role="button" class="page-sidebar__btn js-sidebar-toggle">
+            <span class="page-sidebar__btn-icon page-sidebar__btn-icon--right">
+                <svg class="svg-icon svg-icon--stroke">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arr-right"></use>
+                </svg>
+            </span>
+            <span class="page-sidebar__btn-icon page-sidebar__btn-icon--left">
+                <svg class="svg-icon svg-icon--stroke svg-icon--rotate-180">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-arr-right"></use>
+                </svg>
+            </span>
+        </a>
 
-                <a href="#" class="news-list__item js-item">
-                    <div class="news-list__img-col">
-                        <div class="news-list__img-holder">
-                            <img class="news-list__img" src="/media/images/news-picture-2.png" alt="">
-                        </div>
-                    </div>
-                    <div class="news-list__text-col">
-                        <h2 class="news-list__title">Принцип восприятия: основные моменты</h2>
-                        <p class="news-list__date js-date">14.12.2017</p>
-                    </div>
-                </a>
+        <div class="page-sidebar__content">
+            <div class="news-list js-news-list">
+                <div class="news-list__controls">
+                    <a role="button" class="news-list__btn js-toggle" data-toggle-text="Сначала старые">Сначала новые</a>
+                </div>
 
-                <a href="#" class="news-list__item js-item">
-                    <div class="news-list__img-col">
-                        <div class="news-list__img-holder">
-                            <img class="news-list__img" src="/media/images/news-picture-3.png" alt="">
+                <div class="news-list__items js-container">
+                    <a href="#" class="news-list__item js-item">
+                        <div class="news-list__img-col">
+                            <div class="news-list__img-holder">
+                                <img class="news-list__img" src="/media/images/news-picture-1.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="news-list__text-col">
-                        <h2 class="news-list__title">Основные моменты</h2>
-                        <p class="news-list__date js-date">12.12.2017</p>
-                    </div>
-                </a>
+                        <div class="news-list__text-col">
+                            <h2 class="news-list__title">Из ряда вон выходящий принцип восприятия: основные моменты</h2>
+                            <p class="news-list__date js-date">15.12.2017</p>
+                        </div>
+                    </a>
 
-                <a href="#" class="news-list__item js-item">
-                    <div class="news-list__img-col">
-                        <div class="news-list__img-holder">
-                            <img class="news-list__img" src="/media/images/news-picture-4.png" alt="">
+                    <a href="#" class="news-list__item js-item">
+                        <div class="news-list__img-col">
+                            <div class="news-list__img-holder">
+                                <img class="news-list__img" src="/media/images/news-picture-2.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="news-list__text-col">
-                        <h2 class="news-list__title">Выходящий принцип восприятия: основные моменты</h2>
-                        <p class="news-list__date js-date">11.12.2017</p>
-                    </div>
-                </a>
+                        <div class="news-list__text-col">
+                            <h2 class="news-list__title">Принцип восприятия: основные моменты</h2>
+                            <p class="news-list__date js-date">14.12.2017</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-list__item js-item">
+                        <div class="news-list__img-col">
+                            <div class="news-list__img-holder">
+                                <img class="news-list__img" src="/media/images/news-picture-3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-list__text-col">
+                            <h2 class="news-list__title">Основные моменты</h2>
+                            <p class="news-list__date js-date">12.12.2017</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="news-list__item js-item">
+                        <div class="news-list__img-col">
+                            <div class="news-list__img-holder">
+                                <img class="news-list__img" src="/media/images/news-picture-4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="news-list__text-col">
+                            <h2 class="news-list__title">Выходящий принцип восприятия: основные моменты</h2>
+                            <p class="news-list__date js-date">11.12.2017</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

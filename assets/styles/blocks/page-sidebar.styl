@@ -1,7 +1,42 @@
 .page-sidebar
-    background-color dark-gray
-    color white
     box-sizing border-box
+
+    &__btn
+        display none
+        position fixed
+        z-index 1
+        left 0
+        top 0
+        height 100%
+        width site-paddings
+        background-color dark-gray
+        color white
+
+        .svg-icon
+            width 0.8rem
+            height @width
+
+        &:hover
+            & ^[0]
+                &__btn-icon
+                    color alpha(white, 0.5)
+
+    &__btn-icon
+        centered()
+        transition color trs-time-default
+
+    &__bg-layer
+        full-sized(fixed)
+        background-color white
+        opacity 0.75
+        display block
+        display none
+
+    &__content
+        min-height 100%
+        background-color dark-gray
+        color white
+        position relative
 
 
     /*
@@ -9,14 +44,41 @@
        ========================================================================== */
 
     +below(bp-tab-xs)
-        outline: 1px solid red;
         position fixed
         z-index 3
-        right 100%
+        left 0
         top 0
+        width auto
         height 100%
-        transition transform trs-time-default
-        transform translate(site-paddings * 3.33, 0)
+        background-color lighten(dark-gray, -5)
+        padding-left site-paddings
 
-        &:hover
-            transform translate(100%, 0)
+        .news-list
+            display none
+            max-width rel-size(350px)
+            box-sizing border-box
+
+        &__btn
+            display block
+
+        &__btn-icon
+            &--left
+                display none
+
+        &.is-opened
+            .news-list
+                display block
+
+            & ^[0]
+                &__btn
+                    box-shadow 0 0 rel-size(20px) black
+
+                &__bg-layer
+                    display block
+
+                &__btn-icon
+                    &--left
+                        display block
+
+                    &--right
+                        display none

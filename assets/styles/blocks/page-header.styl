@@ -30,6 +30,10 @@
     &__container
         position relative
 
+    &__burger
+        width 1.5rem
+        height @width
+
 
     /*
        Adaptive
@@ -101,3 +105,7 @@
     +below(bp-tab-xs)
         &__top-row
             padding-left site-paddings * 2
+
+        &__logo-img
+            transform scale(0.7)
+            transform-origin left center

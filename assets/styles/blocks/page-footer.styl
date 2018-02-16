@@ -12,7 +12,12 @@
         flex-wrap wrap
         align-items center
         justify-content space-between
+        box-sizing border-box
 
+
+    /*
+       Adaptive
+       ========================================================================== */
 
     +below(bp-xm)
         &__content
@@ -25,3 +30,8 @@
 
             &:last-child
                 margin-bottom 0
+
+    +below(bp-tab-xs)
+        &__content
+            padding-left site-paddings
+            padding-right site-paddings

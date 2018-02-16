@@ -40,7 +40,16 @@
                 margin-right 0
 
     +below(bp-mobile-menu)
+        display flex
+        flex-direction column
+        align-items flex-start
+        padding-left site-paddings
+
         &__item
-            display block
-            text-align center
-            padding 0.4em
+            padding 0.4em 0 0.4em rel-size(40px)
+            position relative
+
+        &__icon
+            position absolute
+            left 0
+            top rel-size(10px)
