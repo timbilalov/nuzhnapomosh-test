@@ -215,7 +215,7 @@ th {
 .main-menu__icon--3,
 .main-menu__icon--4,
 .page-header__logo-img {
-  background-image: url("/assets/build/dev/sprites/common-sprite.png?mt=1518717549004");
+  background-image: url("/assets/build/prod/sprites/common-sprite.png?mt=1518767939825");
 }
 body,
 html {
@@ -264,7 +264,7 @@ body.is-popup-opened {
   overflow: visible;
 }
 .l-container {
-  width: 88%;
+  width: 90%;
   margin: auto;
   position: relative;
 }
@@ -284,7 +284,7 @@ body.is-popup-opened {
 @media only screen and (max-width: 760px) {
   .l-container {
     margin-right: 0;
-    width: 94%;
+    width: 95%;
   }
 }
 .g-hidden {
@@ -1208,28 +1208,28 @@ table > tbody:first-child tr:first-child td {
   margin-right: 0.3em;
 }
 .main-menu__icon--1 {
-  background-position: 0px -128px;
+  background-position: -101px 0px;
   width: 20px;
   height: 20px;
   display: inline-block;
   vertical-align: middle;
 }
 .main-menu__icon--2 {
-  background-position: -101px -100px;
+  background-position: -59px -53px;
   width: 25px;
   height: 18px;
   display: inline-block;
   vertical-align: middle;
 }
 .main-menu__icon--3 {
-  background-position: -130px -75px;
+  background-position: -29px -53px;
   width: 25px;
   height: 18px;
   display: inline-block;
   vertical-align: middle;
 }
 .main-menu__icon--4 {
-  background-position: -101px -75px;
+  background-position: 0px -53px;
   width: 24px;
   height: 20px;
   display: inline-block;
@@ -1287,7 +1287,7 @@ table > tbody:first-child tr:first-child td {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-left: 6%;
+    padding-left: 5%;
   }
   .main-menu__item {
     padding: 0.4em 0 0.4em 2rem;
@@ -1458,8 +1458,8 @@ table > tbody:first-child tr:first-child td {
 }
 @media only screen and (max-width: 760px) {
   .page-footer__content {
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
 .page-header {
@@ -1483,7 +1483,7 @@ table > tbody:first-child tr:first-child td {
   margin-right: 0.5em;
 }
 .page-header__logo-img {
-  background-position: 0px -75px;
+  background-position: 0px 0px;
   width: 96px;
   height: 48px;
   display: inline-block;
@@ -1520,7 +1520,7 @@ table > tbody:first-child tr:first-child td {
     display: none;
   }
   .page-header__container {
-    padding: 0 6%;
+    padding: 0 5%;
   }
 }
 @media only screen and (max-width: 760px) {
@@ -1529,8 +1529,8 @@ table > tbody:first-child tr:first-child td {
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .page-header__top-row {
     position: relative;
@@ -1548,7 +1548,7 @@ table > tbody:first-child tr:first-child td {
     pointer-events: none;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 1rem 6% 3rem;
+    padding: 1rem 5% 3rem;
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
     -webkit-transform: translate(0, -100%);
@@ -1583,7 +1583,7 @@ table > tbody:first-child tr:first-child td {
 }
 @media only screen and (max-width: 760px) {
   .page-header__top-row {
-    padding-left: 12%;
+    padding-left: 10%;
   }
   .page-header__logo-img {
     -webkit-transform: scale(0.7);
@@ -1606,7 +1606,7 @@ table > tbody:first-child tr:first-child td {
   left: 0;
   top: 0;
   height: 100%;
-  width: 6%;
+  width: 5%;
   background-color: #302f2d;
   color: #fff;
 }
@@ -1652,7 +1652,7 @@ table > tbody:first-child tr:first-child td {
     width: auto;
     height: 100%;
     background-color: #232221;
-    padding-left: 6%;
+    padding-left: 5%;
   }
   .page-sidebar .news-list {
     display: none;
@@ -1684,14 +1684,14 @@ table > tbody:first-child tr:first-child td {
   }
 }
 .page-text-container {
-  padding: 2rem 6%;
+  padding: 2rem 5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #fff;
 }
 .pg-list {
   position: fixed;
-  left: 3%;
+  left: 2.5%;
   bottom: 1.5rem;
   z-index: 2;
   width: 2rem;
